@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/massage"
+            android:layout_width="335dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableStart="@drawable/ic_massage"
+            android:drawableLeft="@drawable/ic_massage"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/josefin_sans_regular"
+            android:hint="@string/massage"
+            android:inputType="textMultiLine"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#fff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry"
+            tools:targetApi="jelly_bean" />
+
+        <EditText
+            android:id="@+id/key"
+            android:layout_width="335dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableStart="@drawable/ic_key"
+            android:drawableLeft="@drawable/ic_key"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/josefin_sans_regular"
+            android:hint="@string/key"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#fff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/massage"
+            app:layout_constraintStart_toStartOf="@+id/massage"
+            app:layout_constraintTop_toBottomOf="@+id/massage"
+            tools:ignore="RtlSymmetry"
+            tools:targetApi="jelly_bean" />
+
+        <Button
+            android:id="@+id/encrypt"
+            android:layout_width="335dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/josefin_sans_regular"
+            android:onClick="encrypt"
+            android:text="@string/encrypt"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/key"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/key"
+            app:layout_constraintTop_toBottomOf="@+id/key"
+            tools:targetApi="jelly_bean" />
+
+        <Button
+            android:id="@+id/decrypt"
+            android:layout_width="335dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/josefin_sans_regular"
+            android:onClick="decrypt"
+            android:text="@string/decrypt"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/encrypt"
+            app:layout_constraintStart_toStartOf="@+id/encrypt"
+            app:layout_constraintTop_toBottomOf="@+id/encrypt" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/decrypt"
+            android:onClick="copy"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="@+id/decrypt"
+            app:layout_constraintTop_toBottomOf="@+id/decrypt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

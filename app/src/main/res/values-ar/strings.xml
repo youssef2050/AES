@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="key">المفتاح</string>
+    <string name="massage">الرسالة</string>
+    <string name="encrypt">شفر</string>
+    <string name="decrypt">فك تشفير</string>
+    <string name="massageIsEmpty">ادخل الرسالة او المفتاح</string>
+    <string name="app_name">AES</string>
+    <string name="copy">تم النسخ</string>
+</resources>

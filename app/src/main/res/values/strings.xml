@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AES</string>
+    <string name="key">Key</string>
+    <string name="massage">Massage</string>
+    <string name="encrypt">encrypt</string>
+    <string name="decrypt">decrypt</string>
+    <string name="massageIsEmpty">Enter input massage or key</string>
+    <string name="copy">Copied to clipboard</string>
+
+</resources>
